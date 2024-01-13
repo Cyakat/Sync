@@ -13,6 +13,10 @@ public class Config extends ConfigBase
 {
     @ConfigProp(category = "gameplay", useSession = true)
     @IntMinMax(min = 0)
+    public int shellConstructionPowerUsageRate = 24;
+
+    @ConfigProp(category = "gameplay", useSession = true)
+    @IntMinMax(min = 0)
     public int shellConstructionPowerRequirement = 48000;
 
     @ConfigProp(category = "gameplay")

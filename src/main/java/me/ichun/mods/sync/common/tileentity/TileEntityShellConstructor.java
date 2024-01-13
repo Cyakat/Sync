@@ -184,9 +184,9 @@ public class TileEntityShellConstructor extends TileEntityDualVertical<TileEntit
             return 0;
         }
         int pow = maxReceive;
-        if(pow > 24)
+        if(pow > Sync.config.shellConstructionPowerUsageRate)
         {
-            pow = 24;
+            pow = Sync.config.shellConstructionPowerUsageRate;
         }
         if(pow > powReq)
         {
